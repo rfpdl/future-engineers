@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\User;
+use App\Engineer;
 
-class UserController extends Controller
+class EngineerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,11 @@ class UserController extends Controller
      */
     public function index()
     {
-        abort(404);
+        $engineers = Engineer::get();
+
+        return view('engineers.index', [
+            'engineers' => $engineers
+        ]);
     }
 
     /**
@@ -25,7 +29,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('users.create');
+        return view('engineers.create');
     }
 
     /**

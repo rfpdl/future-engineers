@@ -20,10 +20,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($users as $user)
+                            @foreach($engineers as $engineer)
                             <tr>
-                                <td>{{ $user->name }}</td>
-                                <td>{{ $user->email }}</td>
+                                <td>{{ $engineer->name }}</td>
+                                <td>{{ $engineer->email }}</td>
                             </tr>
                             @endforeach
                         </tbody>
@@ -32,7 +32,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 my-3">
-                    <a href="{{ route('users.create') }}" class="btn btn-primary">Create</a>
+                    <a href="{{ route('engineers.create') }}" class="btn btn-primary">Create</a>
                 </div>
             </div>
         </div>
