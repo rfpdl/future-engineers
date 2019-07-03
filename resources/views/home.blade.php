@@ -4,9 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            @include('flash::message')
             <div class="row">
                 <div class="col-md-12">
-                    <h3>User list</h3>
+                    <h3>Children list</h3>
                 </div>
             </div>
             <div class="row">
@@ -27,6 +28,11 @@
                             @endforeach
                         </tbody>
                     </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 my-3">
+                    <a href="{{ route('users.create') }}" class="btn btn-primary">Create</a>
                 </div>
             </div>
         </div>
