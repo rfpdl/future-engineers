@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Create children account</div>
+                <div class="card-header">Create future engineer account account</div>
                     
                 </div>
             </div>
