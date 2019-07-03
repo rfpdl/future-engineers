@@ -7,7 +7,7 @@
             @include('flash::message')
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Children list</h3>
+                    <h3>Children account list</h3>
                 </div>
             </div>
             <div class="row">
