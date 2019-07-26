@@ -40,7 +40,7 @@ class EngineerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
