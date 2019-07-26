@@ -26,10 +26,6 @@
                                 <td>{{ $engineer->email }}</td>
                             </tr>
                             @endforeach
-                            <tr>
-                                <td>aaaa</td>
-                                <td>bbb@test.com</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
