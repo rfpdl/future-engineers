@@ -7,13 +7,13 @@
             @include('flash::message')
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Future software engineers list</h3>
+                    <h3>Future software engineers</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <table class="table">
-                        <thead class="thead-dark">
+                    <table class="table table-hover table-bordered">
+                        <thead class="">
                             <tr>
                                 <th>Name</th>
                                 <th>Email</th>
@@ -26,13 +26,17 @@
                                 <td>{{ $engineer->email }}</td>
                             </tr>
                             @endforeach
+                            <tr>
+                                <td>aaaa</td>
+                                <td>bbb@test.com</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 my-3">
-                    <a href="{{ route('engineers.create') }}" class="btn btn-primary">Create</a>
+                    <a href="{{ route('engineers.create') }}" class="btn btn-primary">Join</a>
                 </div>
             </div>
         </div>

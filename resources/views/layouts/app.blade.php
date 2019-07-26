@@ -41,7 +41,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                {{-- <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a> --}}
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
@@ -61,9 +61,9 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                    {{-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
-                                    </form> --}}
+                                    </form>
                                 </div>
                             </li>
                         @endguest
@@ -72,7 +72,7 @@
             </div>
         </nav>
 
-        <main class="py-4 bg-white" style="position:fixed; top:56px; left:0px; bottom:0px; right:0px; background: red;">
+        <main class="py-4">
             @yield('content')
         </main>
     </div>
