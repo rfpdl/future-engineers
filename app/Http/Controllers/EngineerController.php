@@ -40,7 +40,15 @@ class EngineerController extends Controller
      */
     public function store(Request $request)
     {
+        $engineer = new Engineer();
+        $engineer->name = $request->get('name');
+        $engineer->email = $request->get('email');
+        
+        $engineer->save();
 
+        flash('Successfully added');
+
+        return redirect(route('engineers.index'));
     }
 
     /**
